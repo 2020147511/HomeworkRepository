@@ -1,14 +1,32 @@
+body{
+    background-color: rgb(201, 253, 253);
+}
+
 .welcome{
-    font-size: 30px;
+    font-size: 50px;
     color:blue;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-div{
+.signandlogin{
     background-color: wheat;
+    font-size: 20px;
     text-align: left;
     margin: 10px;
     padding: 10px;
-    border: 1px;
-    width: 10em;
-    height: 10em;
+    border: 5px solid black;
+    width: 70em;
+    height: 25em;
+}
+.link{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    border: 3px solid black;
+    margin: 10px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
 }
