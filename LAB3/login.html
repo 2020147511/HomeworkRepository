@@ -1,0 +1,46 @@
+<!--log in page-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <Meta charset="utf-8">
+        <title>Geon's Shop</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css" />
+    </head>
+    <body>
+        <p><div class = "welcome">Welcome Geon's Shop</div></p>
+        <nav>
+            <span class = "link">
+                <a href="./index.html">메인으로</a>
+            </span>
+            <span class = "link">
+                <a href="./login.html">로그인</a>
+            </span> 
+            <span class = "link">
+                <a href="./signup.html">회원가입</a>
+            </span>
+        </nav>
+        <div class = "signandlogin">
+            <p>로그인 (필수)</p>
+            <form method="POST">
+                <p>
+                    <label>아이디: 
+                        <input type="text" name = "id" placeholder="ex)qwer123" required autocomplete="on">
+                    </label>
+                </p>
+                <p>
+                    <label>비밀번호: 
+                        <input type="password" required>
+                    </label>
+                </p>
+                <p>
+                    <span>
+                        <input type="submit" value="login" >
+                    </span> 
+                    <span>
+                        <input type="submit" value="아이디/비밀번호 찾기" >
+                    </span>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
