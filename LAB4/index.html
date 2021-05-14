@@ -1,0 +1,102 @@
+<!--index page-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <Meta charset="utf-8">
+        <title>Geon's Shop</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css" />
+    </head>
+    <body>
+        <p><div class = "welcome">Welcome Geon's Shop</div></p>
+        <hr color="black" size = "4px">
+        <nav>
+            <span class = "link">
+                <a href="./index.html">메인으로</a>
+            </span>
+            <span class = "link">
+                <a href="./login.html">로그인</a>
+            </span> 
+            <span class = "link">
+                <a href="./signup.html">회원가입</a>
+            </span>
+        </nav>
+
+        <hr color="black" size = "4px">
+        <p class = "midfont">전공서적 판매중</p>
+        <hr color="black" size = "4px">    
+        
+        <div class = "formbox">
+            <form>
+                <p>
+                    <label>
+                        카테고리로 찾기<br>
+                        <select name = "major" id = "major">
+                            <option>ALL</option>
+                            <option>Biology</option>
+                            <option>Computer science</option>
+                            <option>Physics</option>
+                            <option>Chemistry</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        책 제목으로 찾기<br>
+                        <input type="search" id = "search"/>
+                    </label>
+                </p>
+                <p>
+                    <button onclick="click();">검색</button>
+                </p>
+            </form>
+        </div>
+        <div class = "showbox" id = "showbox">
+            <p>전공서적 판매중</p>
+        </div>
+
+        <script>
+            let product = new Array();
+            let app = document.querySelector('#showbox');
+            let maj = document.querySelector('#major');
+            let sea = document.querySelector('#search');
+            let cat = 'all';
+            let find = '';
+            document.addEventListener('DOMContentLoaded', load);
+            window.onscroll = () => {
+                if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
+                    addload();
+                }
+            }
+
+            // 클릭시
+            function click(){
+                cat = maj.value;
+                find = sea.value;
+            }
+            function load(){
+                fetch("1.json")
+                .then(response => response.json())
+                .then(function(json){
+                    
+                    product = json;
+                    initial();
+                })
+                
+            }
+
+            // 보여주기.
+            function initial(){
+                // 삭제 먼저
+                while(app.firstChild){
+                    app.removeChild(app.firstChild);
+                }
+
+                let showlist = [];
+                if(cat == 'all'){
+                    showlist = product;
+                }
+            }
+
+        </script>
+    </body>
+</html>

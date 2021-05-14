@@ -1,0 +1,192 @@
+[
+        {
+            "name":"Campbell Biology",
+            "cost":"16$",
+            "img":"Campbell Biology.jpg"
+        },
+        {
+            "name":"Human Biology",
+            "cost":"16$",
+            "img":"Human Biology.jpg"
+        },
+        {
+            "name":"Biology 11th Edition",
+            "cost":"14$",
+            "img":"Biology 11th Edition.jpg"
+        },
+        {
+            "name":"Cengage Biology",
+            "cost":"12$",
+            "img":"Cengage Biology.jpg"
+        },
+        {
+            "name":"Concepts of Biology",
+            "cost":"18$",
+            "img":"Concepts of Biology.jpg"
+        },
+        {
+            "name":"Essential Cell Biology",
+            "cost":"14$",
+            "img":"Essential Cell Biology.jpg"
+        },
+        {
+            "name":"Biological Science",
+            "cost":"8$",
+            "img":"Biological Science.jpg"
+        },
+        {
+            "name":"Must Know High School Biology",
+            "cost":"7$",
+            "img":"Must Know High School Biology.jpg"
+        },
+        {
+            "name":"Modern Classical Physics",
+            "cost":"17$",
+            "img":"Modern Classical Physics.jpg"
+        },
+        {
+            "name":"Introduction To General Relativity And Cosmology",
+            "cost":"6$",
+            "img":"Introduction To General Relativity And Cosmology.jpg"
+        },
+        {
+            "name":"Conceptual Physics",
+            "cost":"14$",
+            "img":"Conceptual Physics.jpg"
+        },
+        {
+            "name":"No Bulls--t Guide To Math And Physics",
+            "cost":"19$",
+            "img":"No Bulls--t Guide To Math And Physics.jpg"
+        },
+        {
+            "name":"Fundamentals Of Physics",
+            "cost":"11$",
+            "img":"Fundamentals Of Physics.jpg"
+        },
+        {
+            "name":"College Physics: A Strategic Approach",
+            "cost":"17$",
+            "img":"College Physics: A Strategic Approach.jpg"
+        },
+        {
+            "name":"Introduction To Quantum Mechanics",
+            "cost":"14$",
+            "img":"Introduction To Quantum Mechanics.jpg"
+        },
+        {
+            "name":"Basic Physics",
+            "cost":"6$",
+            "img":"Basic Physics.jpg"
+        },
+        {
+            "name":"University Physics With Modern Physics",
+            "cost":"13$",
+            "img":"University Physics With Modern Physics.jpg"
+        },
+        {
+            "name":"Physics: Principles With Applications",
+            "cost":"18$",
+            "img":"Physics: Principles With Applications.jpg"
+        },
+        {
+            "name":"Chemistry: The Central Science",
+            "cost":"7$",
+            "img":"Chemistry: The Central Science.jpg"
+        },
+        {
+            "name":"Chemistry: A Molecular Approach",
+            "cost":"14$",
+            "img":"Chemistry: A Molecular Approach.jpg"
+        },
+        {
+            "name":"Chemistry 10th Edition",
+            "cost":"11$",
+            "img":"Chemistry 10th Edition.jpg"
+        },
+        {
+            "name":"Organic Chemistry As a Second Language",
+            "cost":"11$",
+            "img":"Organic Chemistry As a Second Language.jpg"
+        },
+        {
+            "name":"Chemistry: The Molecular Nature of Matter and Change",
+            "cost":"14$",
+            "img":"Chemistry: The Molecular Nature of Matter and Change.jpg"
+        },
+        {
+            "name":"Chemistry 2e by OpenStax",
+            "cost":"10$",
+            "img":"Chemistry 2e by OpenStax.jpg"
+        },
+        {
+            "name":"An Introduction to General, Organic, and Biological Chemistry",
+            "cost":"12$",
+            "img":"An Introduction to General, Organic, and Biological Chemistry.jpg"
+        },
+        {
+            "name":"Chemistry: Concepts and Problems",
+            "cost":"7$",
+            "img":"Chemistry: Concepts and Problems.jpg"
+        },
+        {
+            "name":"Chemistry For Dummies",
+            "cost":"15$",
+            "img":"Chemistry For Dummies.jpg"
+        },
+        {
+            "name":"Prentice Hall Chemistry",
+            "cost":"16$",
+            "img":"Prentice Hall Chemistry.jpg"
+        },
+        {
+            "name":"Computer Science Illuminated",
+            "cost":"6$",
+            "img":"Computer Science Illuminated.jpg"
+        },
+        {
+            "name":"Computer Science Principles: The Foundational Concepts",
+            "cost":"13$",
+            "img":"Computer Science Principles: The Foundational Concepts.jpg"
+        },
+        {
+            "name":"Starting Out with Programming Logic and Design",
+            "cost":"11$",
+            "img":"Starting Out with Programming Logic and Design.jpg"
+        },
+        {
+            "name":"An Introduction to Computer Science Using Python 3.6",
+            "cost":"7$",
+            "img":"An Introduction to Computer Science Using Python 3.6.jpg"
+        },
+        {
+            "name":"Computer Science: A Structured Programming Approach",
+            "cost":"14$",
+            "img":"Computer Science: A Structured Programming Approach.jpg"
+        },
+        {
+            "name":"Python Programming: An Introduction to Computer Science",
+            "cost":"12$",
+            "img":"Python Programming: An Introduction to Computer Science.jpg"
+        },
+        {
+            "name":"Essentials of Computer Organization and Architecture",
+            "cost":"9$",
+            "img":"Essentials of Computer Organization and Architecture.jpg"
+        },
+        {
+            "name":"Computer Science: An Overview",
+            "cost":"12$",
+            "img":"Computer Science: An Overview.jpg"
+        },
+        {
+            "name":"Invitation to Computer Science",
+            "cost":"15$",
+            "img":"Invitation to Computer Science.jpg"
+        },
+        {
+            "name":"Barron's AP Computer Science A",
+            "cost":"16$",
+            "img":"Barron's AP Computer Science A.jpg"
+        }
+]
