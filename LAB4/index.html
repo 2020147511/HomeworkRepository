@@ -74,11 +74,11 @@
                 find = sea.value;
             }
             function load(){
-                fetch("1.json")
+                fetch("https://2020147511.github.io/HomeworkRepository/LAB4/product.json")
                 .then(response => response.json())
                 .then(function(json){
-                    
                     product = json;
+
                     initial();
                 })
                 
@@ -90,7 +90,7 @@
                 while(app.firstChild){
                     app.removeChild(app.firstChild);
                 }
-
+                console.log(product);
                 let showlist = [];
                 if(cat == 'all'){
                     showlist = product;
