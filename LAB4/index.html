@@ -51,25 +51,28 @@
             </form>
         </div>
         <div class = "showbox" id = "showbox">
-            <p>전공서적 판매중</p>
         </div>
 
         <script>
             let product = new Array();
-            let count = 0;
+            let start = 0;
+            let end = 8;
             let app = document.querySelector('#showbox');
             let maj = document.querySelector('#major');
             let sea = document.querySelector('#search');
             let but = document.querySelector('button');
             let cat = 'ALL';
             let find = '';
+            let final_showlist = [];
             document.addEventListener('DOMContentLoaded', load);
             window.onscroll = () => {
-                if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
+                // infinite scroll
+                if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
                     addload();
                 }
             }
 
+            // use fetch to load product.json
             function load(){
                 fetch("https://2020147511.github.io/HomeworkRepository/LAB4/product.json")
                 .then(response => response.json())
@@ -103,7 +106,7 @@
                     }
                 }
 
-                let final_showlist = [];
+                final_showlist = [];
                 // search second
                 if(find === ''){
                     final_showlist = showlist;
@@ -116,6 +119,8 @@
                         }
                     }
                 }
+                start = 0;
+                end = 8;
                 display(final_showlist);
             }
 
@@ -126,32 +131,73 @@
                     app.removeChild(app.firstChild);
                 }
 
-                let showlist = [];
+                final_showlist = [];
                 // category first
                 if(cat === 'ALL'){
-                    showlist = product;
+                    final_showlist = product;
                 }
                 else{
                     for(let i = 0; i < product.length; i++){
                         if(product[i].cat === cat){
-                            showlist.push(product[i]);
+                            final_showlist.push(product[i]);
                         }
                     }
                 }
-                display(showlist);
+                start = 0;
+                end = 8;
+                display(final_showlist);
             }
 
-            function display(showlist){
-                count = 10;
-                for(let i = 0; i < showlist.length; i++){
+            function display(final_showlist){
+                for(let i = start; i < end; i++){
                     const ele = document.createElement('div');
+
+                    // cost
+                    const elecost = document.createElement('div');
+                    elecost.setAttribute('id', 'cost');
+                    const elec = document.createElement('p');
+                    elec.innerHTML = final_showlist[i].cost;
+                    elecost.appendChild(elec);
+                    ele.appendChild(elecost);
+                    // text
+                    const eletext = document.createElement('div');
+                    eletext.setAttribute('id', 'name');
+                    const elep = document.createElement('p');
+                    elep.innerHTML = final_showlist[i].name;
+                    eletext.appendChild(elep);
+                    ele.appendChild(eletext);
+                    
+
+                    // img
                     const eleimg = document.createElement('img')
-                    eleimg.setAttribute("onclick", "show");
-                    eleimg.setAttribute("src", showlist[i].img);
+                    eleimg.setAttribute("src", "img/" + final_showlist[i].img);
                     ele.appendChild(eleimg);
+
+                    
+                    ele.addEventListener("click", show);
                     app.appendChild(ele);
                 }
                 
+            }
+
+            // add load
+            function addload(){
+                start = end;
+                end += 2;
+                display(final_showlist);
+            }
+
+            // show
+            function show(){
+                let getdiv = this.querySelectorAll('div');
+                for(let i = 0; i < 2; i++){
+                    if(getdiv[i].style.display === 'inline'){
+                        getdiv[i].style.display = 'none';
+                    }
+                    else{
+                        getdiv[i].style.display = 'inline';
+                    }
+                }
             }
 
         </script>
