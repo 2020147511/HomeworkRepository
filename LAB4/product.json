@@ -138,12 +138,6 @@
             "cat":"Computer science"
         },
         {
-            "name":"Computer Science Principles: The Foundational Concepts",
-            "cost":"13$",
-            "img":"Computer Science Principles: The Foundational Concepts.jpg",
-            "cat":"Computer science"
-        },
-        {
             "name":"Starting Out with Programming Logic and Design",
             "cost":"11$",
             "img":"Starting Out with Programming Logic and Design.jpg",
@@ -159,12 +153,6 @@
             "name":"Essentials of Computer Organization and Architecture",
             "cost":"9$",
             "img":"Essentials of Computer Organization and Architecture.jpg",
-            "cat":"Computer science"
-        },
-        {
-            "name":"Computer Science: An Overview",
-            "cost":"12$",
-            "img":"Computer Science: An Overview.jpg",
             "cat":"Computer science"
         },
         {
