@@ -78,12 +78,6 @@
             "cat":"Physics"
         },
         {
-            "name":"College Physics: A Strategic Approach",
-            "cost":"17$",
-            "img":"College Physics: A Strategic Approach.jpg",
-            "cat":"Physics"
-        },
-        {
             "name":"Introduction To Quantum Mechanics",
             "cost":"14$",
             "img":"Introduction To Quantum Mechanics.jpg",
@@ -102,24 +96,6 @@
             "cat":"Physics"
         },
         {
-            "name":"Physics: Principles With Applications",
-            "cost":"18$",
-            "img":"Physics: Principles With Applications.jpg",
-            "cat":"Physics"
-        },
-        {
-            "name":"Chemistry: The Central Science",
-            "cost":"7$",
-            "img":"Chemistry: The Central Science.jpg",
-            "cat":"Chemistry"
-        },
-        {
-            "name":"Chemistry: A Molecular Approach",
-            "cost":"14$",
-            "img":"Chemistry: A Molecular Approach.jpg",
-            "cat":"Chemistry"
-        },
-        {
             "name":"Chemistry 10th Edition",
             "cost":"11$",
             "img":"Chemistry 10th Edition.jpg",
@@ -132,12 +108,6 @@
             "cat":"Chemistry"
         },
         {
-            "name":"Chemistry: The Molecular Nature of Matter and Change",
-            "cost":"14$",
-            "img":"Chemistry: The Molecular Nature of Matter and Change.jpg",
-            "cat":"Chemistry"
-        },
-        {
             "name":"Chemistry 2e by OpenStax",
             "cost":"10$",
             "img":"Chemistry 2e by OpenStax.jpg",
@@ -147,12 +117,6 @@
             "name":"An Introduction to General, Organic, and Biological Chemistry",
             "cost":"12$",
             "img":"An Introduction to General, Organic, and Biological Chemistry.jpg",
-            "cat":"Chemistry"
-        },
-        {
-            "name":"Chemistry: Concepts and Problems",
-            "cost":"7$",
-            "img":"Chemistry: Concepts and Problems.jpg",
             "cat":"Chemistry"
         },
         {
@@ -189,18 +153,6 @@
             "name":"An Introduction to Computer Science Using Python 3.6",
             "cost":"7$",
             "img":"An Introduction to Computer Science Using Python 3.6.jpg",
-            "cat":"Computer science"
-        },
-        {
-            "name":"Computer Science: A Structured Programming Approach",
-            "cost":"14$",
-            "img":"Computer Science: A Structured Programming Approach.jpg",
-            "cat":"Computer science"
-        },
-        {
-            "name":"Python Programming: An Introduction to Computer Science",
-            "cost":"12$",
-            "img":"Python Programming: An Introduction to Computer Science.jpg",
             "cat":"Computer science"
         },
         {

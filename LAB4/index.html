@@ -56,10 +56,12 @@
 
         <script>
             let product = new Array();
+            let count = 0;
             let app = document.querySelector('#showbox');
             let maj = document.querySelector('#major');
             let sea = document.querySelector('#search');
-            let cat = 'all';
+            let but = document.querySelector('button');
+            let cat = 'ALL';
             let find = '';
             document.addEventListener('DOMContentLoaded', load);
             window.onscroll = () => {
@@ -68,20 +70,53 @@
                 }
             }
 
-            // 클릭시
-            function click(){
-                cat = maj.value;
-                find = sea.value;
-            }
             function load(){
                 fetch("https://2020147511.github.io/HomeworkRepository/LAB4/product.json")
                 .then(response => response.json())
                 .then(function(json){
                     product = json;
-
                     initial();
-                })
-                
+                }) 
+            }
+
+            but.onclick = click;
+            // 클릭시
+            function click(e){
+                e.preventDefault();
+                cat = maj.value;
+                find = sea.value;
+                // 삭제 먼저
+                while(app.firstChild){
+                    app.removeChild(app.firstChild);
+                }
+
+                let showlist = [];
+                // category first
+                if(cat === 'ALL'){
+                    showlist = product;
+                }
+                else{
+                    for(let i = 0; i < product.length; i++){
+                        if(product[i].cat === cat){
+                            showlist.push(product[i]);
+                        }
+                    }
+                }
+
+                let final_showlist = [];
+                // search second
+                if(find === ''){
+                    final_showlist = showlist;
+                }
+                else{
+                    for(let i = 0; i < showlist.length; i++){
+                        let tmp = showlist[i].name.toLowerCase();
+                        if(tmp.indexOf(find.toLowerCase()) != -1){
+                            final_showlist.push(showlist[i]);
+                        }
+                    }
+                }
+                display(final_showlist);
             }
 
             // 보여주기.
@@ -90,11 +125,33 @@
                 while(app.firstChild){
                     app.removeChild(app.firstChild);
                 }
-                console.log(product);
+
                 let showlist = [];
-                if(cat == 'all'){
+                // category first
+                if(cat === 'ALL'){
                     showlist = product;
                 }
+                else{
+                    for(let i = 0; i < product.length; i++){
+                        if(product[i].cat === cat){
+                            showlist.push(product[i]);
+                        }
+                    }
+                }
+                display(showlist);
+            }
+
+            function display(showlist){
+                count = 10;
+                for(let i = 0; i < showlist.length; i++){
+                    const ele = document.createElement('div');
+                    const eleimg = document.createElement('img')
+                    eleimg.setAttribute("onclick", "show");
+                    eleimg.setAttribute("src", showlist[i].img);
+                    ele.appendChild(eleimg);
+                    app.appendChild(ele);
+                }
+                
             }
 
         </script>

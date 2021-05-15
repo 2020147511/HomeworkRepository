@@ -87,4 +87,17 @@ input{
     float: right;
     border: 2px solid black;
     width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showbox>div{
+    position: relative;
+
+}
+.showbox>div>img{
+    width: 300px;
+    height: 300px;
+    padding-right: 50px;
+    padding-bottom: 20px;
 }
